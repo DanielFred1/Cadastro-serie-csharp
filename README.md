@@ -44,3 +44,33 @@ Os links para documentação podem ser acessados aqui:
 
 <https://docs.microsoft.com/pt-br/dotnet/api/system.enum.getname?view=net-5.0>
 
+
+
+### If usando bool para apresentar controle de exclusão de séries no sistema
+
+Como não estamos usando uma base de dados, para não haver problemas nos índices das séries depois da atualização de exclusão, foi implementada a funcionalidade de apresentar "Excluído" ou "Ativo" e de ocultar a série excluída da listagem geral.
+
+
+
+- Listagem de séries cadastradas (todas)
+
+```c#
+foreach (var serie in lista)
+{
+    var excluido = serie.RetornaExcluido();
+    Console.WriteLine($"ID {serie.RetornaId()} | {serie.RetornaTitulo()} | {(excluido ? "Excluído" : "Ativo")}");
+}
+```
+
+
+
+- Listagem de séries ativas
+
+```c#
+var excluido = serie.RetornaExcluido();
+if (excluido != true)
+{
+    Console.WriteLine($"ID {serie.RetornaId()} | {serie.RetornaTitulo()}");
+}
+```
+

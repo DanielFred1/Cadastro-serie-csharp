@@ -38,6 +38,7 @@ namespace Cadastro.serie
             retorno += "Título: " + this.Titulo + Environment.NewLine;
             retorno += "Descrição: " + this.Descricao + Environment.NewLine;
             retorno += "Ano de início: " + this.Ano + Environment.NewLine;
+            retorno += "Excluído: " + this.Excluido;
             return retorno;
         }
 
@@ -54,6 +55,11 @@ namespace Cadastro.serie
         public void Excluir()
         {
             this.Excluido = true;
+        }
+
+        public bool RetornaExcluido()
+        {
+            return this.Excluido;
         }
     }
 }
