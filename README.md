@@ -17,3 +17,13 @@ Podemos utilizar o site <https://www.toptal.com/developers/gitignore> para gerar
 
 
 
+### Uso da classe SerieRepositorio como um "banco de dados"
+
+O objetivo dessa classe é simular um banco de dados dentro da própria aplicação, por meio de uma lista criada com os dados inseridos.
+
+```c#
+private List<Serie> ListaSerie = new List<Serie>();
+```
+
+
+
