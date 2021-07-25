@@ -3,3 +3,17 @@ Algoritmo simples para cadastro de séries a fim de praticar conhecimentos em or
 
 - Como pensar orientado a objetos, modelar domínio e utilizar recursos de coleção para salvar dados em memória.
 
+### Primeiros passos
+
+Criando aplicação console pelo terminal
+
+```c#
+dotnet new console -n Cadastro.serie
+```
+
+Vamos adicionar também um arquivo .gitignore para ignorar arquivos desnecessários nos commits da aplicação, não importantes para o desenvolvimento, como arquivos temporários e de sistema.
+
+Podemos utilizar o site <https://www.toptal.com/developers/gitignore> para gerar um .gitignore automático para a linguagem C# e assim adicioná-lo ao repositório.
+
+
+
