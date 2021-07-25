@@ -1,5 +1,5 @@
 # Cadastro-serie-csharp
-Algoritmo simples para cadastro de séries a fim de praticar conhecimentos em orientação a objetos.
+Algoritmo simples para cadastro de séries a fim de praticar conhecimentos em orientação a objetos, utilizando como base o projeto criado por **Eliézer Zarpelão** na plataforma da _Digital Innovation One_.
 
 - Como pensar orientado a objetos, modelar domínio e utilizar recursos de coleção para salvar dados em memória.
 
